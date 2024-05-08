@@ -5,6 +5,7 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import DashboardNav from "./wrappers/DashboardNav";
 import { loader as UserLoader } from "./wrappers/DashboardNav";
+import ForgotPassword from "./components/ForgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "forgotpassword",
+        element: <ForgotPassword />,
       },
     ],
   },
