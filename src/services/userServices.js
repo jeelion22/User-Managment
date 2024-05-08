@@ -26,6 +26,10 @@ const userServices = {
   logout: async () => {
     return await protectedInstance.post("/logout");
   },
+
+  forgotpassword: async () => {
+    return await instance.post("/forgotpassword");
+  },
 };
 
 export default userServices;
