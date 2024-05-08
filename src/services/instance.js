@@ -1,7 +1,8 @@
 import axios from "axios";
 
 // define a baseURL for the aou call
-const baseURL = "http://localhost:4001/api/users";
+const baseURL =
+  "https://roadmap-day41-password-reset-backend-task.onrender.com/api/users";
 
 // create axios instances
 const instance = axios.create({
