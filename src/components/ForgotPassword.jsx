@@ -3,6 +3,7 @@ import { Formik } from "formik";
 import userServices from "../services/userServices";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import * as Yup from "yup";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
