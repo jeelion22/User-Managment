@@ -18,7 +18,7 @@ const ForgotPassword = () => {
           .required("Required"),
       })}
       onSubmit={async (values, { setSubmitting, resetForm }) => {
-        const { username } = values;
+        const { username } = values.email;
         console.log(values);
 
         userServices.forgotpassword(username).then((response) => {
