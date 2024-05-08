@@ -15,10 +15,16 @@ const Register = () => {
   return (
     <>
       <Formik
-        initialValues={{ firstname, lastname, email, password, confirmPassword }}
+        initialValues={{
+          firstname,
+          lastname,
+          email,
+          password,
+          confirmPassword,
+        }}
         validationSchema={registrationValidationSchema}
         onSubmit={async (values, { setSubmitting, resetForm }) => {
-          const { firstname, lastname, email, password } = values;
+          const { firstname, lastname, email, confirmPassword } = values;
 
           userServices
             .register(firstname, lastname, email, confirmPassword)
