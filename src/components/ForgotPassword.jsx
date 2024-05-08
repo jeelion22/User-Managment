@@ -19,7 +19,9 @@ const ForgotPassword = () => {
       })}
       onSubmit={async (values, { setSubmitting, resetForm }) => {
         const { username } = values;
+
         userServices.forgotpassword(username).then((response) => {
+          console.log(username);
           alert(response.data.message);
           setEmail("");
           setTimeout(() => {
