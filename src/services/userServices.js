@@ -7,7 +7,7 @@ const userServices = {
     return await instance.post("/create", {
       name: `${firstname} ${lastname}`,
       username: email,
-      password: confirmPassword
+      password: confirmPassword,
     });
   },
   //   login user
@@ -24,7 +24,7 @@ const userServices = {
   },
   //   logout currently logged user
   logout: async () => {
-    return await protectedInstance.get("/logout");
+    return await protectedInstance.post("/logout");
   },
 };
 
